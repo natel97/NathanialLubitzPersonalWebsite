@@ -1,0 +1,28 @@
+2017-03-31 22:18:08 [ERROR] : System error 5 has occurred.
+
+Access is denied.
+
+
+2017-03-31 22:18:08 [COMMAND] : pgc set GLOBAL REPO http://s3.amazonaws.com/pgcentral 
+2017-03-31 22:18:09 [ERROR] : System error 5 has occurred.
+
+Access is denied.
+
+
+2017-03-31 22:18:09 [COMMAND] : pgc update 
+2017-03-31 22:18:09 [INFO] : Retrieving the remote list of latest component versions (versions.sql) ...
+2017-03-31 22:18:09 [ERROR] : System error 5 has occurred.
+
+Access is denied.
+
+
+2017-03-31 22:18:10 [INFO] : Downloading file versions.sql 
+2017-03-31 22:18:11 [ERROR] : System error 5 has occurred.
+
+Access is denied.
+
+
+2017-03-31 22:18:12 [INFO] : Downloading checksum for versions.sql.sha512 
+2017-03-31 22:18:12 [INFO] : Validating checksum file...
+2017-03-31 22:18:12 [INFO] : Updating local repository with remote entries...
+2017-03-31 22:18:12 [INFO] : 'hub' is v3.1.4
