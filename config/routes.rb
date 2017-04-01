@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   get 'tags/index'
 
   get 'tags/edit'
@@ -13,5 +15,6 @@ Rails.application.routes.draw do
   resources :tags
   resources :posttags
   resources :comments
+    ActiveAdmin.routes(self)
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
