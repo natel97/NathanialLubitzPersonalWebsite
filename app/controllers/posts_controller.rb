@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 def index
-@content_first = "This is a test string";
+@posts = Post.all
 end
 
 def new
@@ -20,7 +20,7 @@ def update
 end
 
 def show
-  
+  @post = Post.find(params[:id])
 end
 
 def destroy

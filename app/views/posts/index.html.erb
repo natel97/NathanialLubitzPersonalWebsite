@@ -19,7 +19,11 @@
 			<ul id='portfolioNav'><a href="/posts">Portfolio</a></ul>
 			<ul id='contactNav'><a href="contact.html">Contact Me</a></ul>
 		</nav>
-<h1>These are some of my portfolio Projects</h1>
-<p><%=@content_first%></p>
+		<h1>These are some of my portfolio Projects</h1>
+		<% @posts.each do |post| %>
+		<h3><%= link_to post.title,post %></h3>
+		<p><%= post.content %></p>
+		<%end%>
+<p></p>
 </body>
 </html>
