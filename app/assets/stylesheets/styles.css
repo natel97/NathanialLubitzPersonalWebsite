@@ -1,0 +1,74 @@
+#homeNav, #contactNav, #portfolioNav, #skillsNav, #backNav, #nextPost, #previousPost{
+	background-color: #90caf9;
+    color:white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+	border-radius: 10px;
+	transition: all 0.4s ease-in-out;	
+    }
+    #homeNav:hover, #contactNav:hover, #portfolioNav:hover, #skillsNav:hover, #backnav:hover, #nextPost:hover, #previousPost:hover{
+    	background-color: #1976d2;
+    	box-shadow: 5px 5px 0px 0px #0d47a1;
+    	color: red;
+    }
+    #skillAndroid, #skillApple, #skillGit, #skillROR, #skillServer, #skillWeb, #skillWindows{
+    	cursor: pointer;
+    }
+    #resume{
+    	background-color: #f44336;
+    	color:white;
+    	padding: 16px;
+    	font-size: 20px;
+    	border: none;
+    	cursor: pointer;
+    	display: inline-block;
+    	transition: all 0.4s ease-in-out;
+    	text-decoration: none;
+    }
+    #area{
+    	display: inline-block;
+    	width: 100%;
+		background: #FFC107;
+		background: linear-gradient(to right, #FFC107, #FF5722);
+    	border-radius: 0px 0px 10px 10px;
+    	}
+    #skillSet{
+    	width: 50%;
+    	float: left;
+    	padding: 2%;
+    	background-color: #FFC107;
+    	border-radius: 5%;
+    	margin: 0%;
+    }
+    #info{
+    	width: 39%;
+    	float: right;
+    	padding: 2%;
+    	margin: 0%;
+    	background-color: #FF5722;
+    	border-radius: 10px;
+    }
+    #resume:hover{
+    	background-color: #e53935;
+    	box-shadow: 5px 5px 0px 0px #b71c1c;
+    }
+    #nameLogo{width: 100%;}
+    nav{
+    	text-align: center;
+   	 	background-color: #64b5f6;
+    }
+    a{
+    	text-decoration: none;
+    }
+    html{
+    	background-color: #0d47a1;
+    }
+body{
+	width: 80%;
+	margin: 0 auto;
+	background-color: #e3f2fd;
+	padding: 32px;
+	}

@@ -11,8 +11,10 @@
 	</head>
 
 	<body>
-	<img id='nameLogo' src='Nathanial-Lubitz.png'>
-	<!--Image obtained from textcraft.net. I really appreciate their service!-->
+<div id="nameLogo">
+<%= image_tag "Nathanial-Lubitz.png" %>	
+</div>
+<!--Image obtained from textcraft.net. I really appreciate their service!-->
 		<nav>
 			<ul id='homeNav'><a href="index.html">Home</a></ul>
 			<ul id='skillsNav'><a href="skills.html">Skills</a></ul>
@@ -21,8 +23,8 @@
 		</nav>
 		<h1>These are some of my portfolio Projects</h1>
 		<% @posts.each do |post| %>
-		<h3><%= link_to post.title,post %></h3>
-		<p><%= post.content %></p>
+		<h3 class="postsHeading"><%= link_to post.title,post %></h3>
+		<br><br><br>
 		<%end%>
 <p></p>
 </body>
