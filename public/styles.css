@@ -1,4 +1,7 @@
-#homeNav, #contactNav, #portfolioNav, #skillsNav{
+@media screen and (min-width: 500px) {
+	
+
+#homeNav, #contactNav, #portfolioNav, #skillsNav, #backNav, #nextPost, #previousPost{
 	background-color: #90caf9;
     color:white;
     padding: 16px;
@@ -9,7 +12,7 @@
 	border-radius: 10px;
 	transition: all 0.4s ease-in-out;	
     }
-    #homeNav:hover, #contactNav:hover, #portfolioNav:hover, #skillsNav:hover{
+    #homeNav:hover, #contactNav:hover, #portfolioNav:hover, #skillsNav:hover, #backnav:hover, #nextPost:hover, #previousPost:hover{
     	background-color: #1976d2;
     	box-shadow: 5px 5px 0px 0px #0d47a1;
     	color: red;
@@ -72,3 +75,85 @@ body{
 	background-color: #e3f2fd;
 	padding: 32px;
 	}
+#postAndDetails{
+	background-color: #D7CCC8;
+}
+#postTitle{
+	background-color:#FF7043;
+	float: left;
+	display: inline-block;
+	padding: 16px;
+}
+#postTime{
+	background-color:#FF7043;
+	display: inline-block;
+	padding: 8px;
+	float: right;
+}
+#postContent{
+	background-color: #795548;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+}
+}
+@media screen and (max-width: 500px) {
+	
+	html, body {
+	font: 12px/15px sans-serif;
+	width: 100%;
+	background: #fff;
+	padding: 3px;
+	color: #000;
+	margin: 0;
+	}
+	#homeNav, #contactNav, #portfolioNav, #skillsNav, #backNav, #nextPost, #previousPost{
+	background-color: #90caf9;
+    color:white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+	border-radius: 10px;
+	transition: all 0.4s ease-in-out;	
+    }
+    #homeNav:hover, #contactNav:hover, #portfolioNav:hover, #skillsNav:hover, #backnav:hover, #nextPost:hover, #previousPost:hover{
+    	background-color: #1976d2;
+    	box-shadow: 5px 5px 0px 0px #0d47a1;
+    	color: red;
+    }
+        #resume:hover{
+    	background-color: #e53935;
+    	box-shadow: 5px 5px 0px 0px #b71c1c;
+    }
+    #nameLogo{width: 100%;}
+    nav{
+    	text-align: center;
+   	 	background-color: #64b5f6;
+    }
+    a{
+    	text-decoration: none;
+    }
+    #postAndDetails{
+	background-color: #D7CCC8;
+}
+#postTitle{
+	background-color:#FF7043;
+	float: left;
+	display: inline-block;
+	padding: 16px;
+}
+#postTime{
+	background-color:#FF7043;
+	display: inline-block;
+	padding: 8px;
+	float: right;
+}
+#postContent{
+	background-color: #795548;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+}
+}
