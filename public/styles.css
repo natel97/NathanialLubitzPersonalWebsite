@@ -113,28 +113,46 @@ body{
 	margin: 20px;
 	border-radius: 10px;
 }
-
+#top{
+	padding: 24px;
+}
 #myPic{
 	width: 200px;
 	height: 350px;
 	border-radius: 10px;
 	float: right;
 	margin: 32px;
+	position: relative;
+
+}
+#top{
+	width: 100%;
+	min-height: 400px;
+	
 }
 #cornerA{
-	width: 30%;
+	width: 20%;
 	min-height: 400px;
+	position: relative;
 	float: left;
 }
+
+
 #cornerB{
-	width: 40%;
+	width: 40%
+	min-width: 100px;
 	min-height: 400px;
 	float: left;
+	position: relative;
+
 }
 #cornerC{
-	width: 30%;
+	width: 25%;
+	min-width: 225px;
 	min-height: 400px;
-	float: left;
+	float: right;
+	position: relative;
+
 }
 
 
