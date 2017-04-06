@@ -1,9 +1,10 @@
+
 var isrunning = false;
 var information = function (message, index) {
 	if (index < message.length) {
 		isrunning = true;
-		$('#info').append(message[index++]);
-		setTimeout(function () { information(message, index);}, 10);
+	 	$('#info').append(message[index++]);
+		setTimeout(function () { information(message, index);}, 2);
 		}
 	else isrunning = false;
 };

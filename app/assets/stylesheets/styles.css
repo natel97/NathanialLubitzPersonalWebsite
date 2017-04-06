@@ -1,21 +1,29 @@
 @media screen and (min-width: 500px) {
-	
+.intro{
+	text-align: center;
+	padding: 16px;
+	margin: 10px;
 
-#homeNav, #contactNav, #portfolioNav, #skillsNav, #backNav, #nextPost, #previousPost{
-	background-color: #90caf9;
+}	
+
+
+.navigate{
+	background-color: #0033FF;
     color:white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 24px;
     border: none;
     cursor: pointer;
     display: inline-block;
 	border-radius: 10px;
-	transition: all 0.4s ease-in-out;	
+	
     }
-    #homeNav:hover, #contactNav:hover, #portfolioNav:hover, #skillsNav:hover, #backnav:hover, #nextPost:hover, #previousPost:hover{
-    	background-color: #1976d2;
-    	box-shadow: 5px 5px 0px 0px #0d47a1;
-    	color: red;
+   h3{
+   	text-align: center;
+   	font-size: 2em;
+   }
+   .navigate:hover{
+    	background-color: #099FFF;
     }
     #skillAndroid, #skillApple, #skillGit, #skillROR, #skillServer, #skillWeb, #skillWindows{
     	cursor: pointer;
@@ -34,6 +42,7 @@
     #area{
     	display: inline-block;
     	width: 100%;
+    	color: black;
 		background: #FFC107;
 		background: linear-gradient(to right, #FFC107, #FF5722);
     	border-radius: 0px 0px 10px 10px;
@@ -45,6 +54,7 @@
     	background-color: #FFC107;
     	border-radius: 5%;
     	margin: 0%;
+    	color: black;
     }
     #info{
     	width: 39%;
@@ -53,6 +63,8 @@
     	margin: 0%;
     	background-color: #FF5722;
     	border-radius: 10px;
+    	color: black;
+    	font-size: 1.5em;
     }
     #resume:hover{
     	background-color: #e53935;
@@ -61,23 +73,25 @@
     #nameLogo{width: 100%;}
     nav{
     	text-align: center;
-   	 	background-color: #64b5f6;
+
     }
     a{
     	text-decoration: none;
+    	color: white;
     }
     html{
-    	background-color: #0d47a1;
+    	background-color: black;
+    	color: #33FF00;
+    }
+    p, li{
+    	font-size: 1.5em;
     }
 body{
 	width: 80%;
 	margin: 0 auto;
-	background-color: #e3f2fd;
 	padding: 32px;
 	}
-#postAndDetails{
-	background-color: #D7CCC8;
-}
+
 #postTitle{
 	background-color:#FF7043;
 	float: left;
@@ -96,11 +110,34 @@ body{
 	margin: 20px;
 	border-radius: 10px;
 }
+
+#myPic{
+	width: 200px;
+	height: 350px;
+	border-radius: 10px;
+}
+#cornerA{
+	width: 30%;
+	min-height: 400px;
+	float: left;
+}
+#cornerB{
+	width: 40%;
+	min-height: 400px;
+	float: left;
+}
+#cornerC{
+	width: 30%;
+	min-height: 400px;
+	float: left;
+}
+
+
 }
 @media screen and (max-width: 500px) {
 	
 	html, body {
-	font: 12px/15px sans-serif;
+	font: 14px/20px sans-serif;
 	width: 100%;
 	background: #fff;
 	padding: 3px;
@@ -110,8 +147,10 @@ body{
 	#homeNav, #contactNav, #portfolioNav, #skillsNav, #backNav, #nextPost, #previousPost{
 	background-color: #90caf9;
     color:white;
+    min-width: 15%;
     padding: 16px;
-    font-size: 16px;
+    font-size: 2em;
+    height: 100%;
     border: none;
     cursor: pointer;
     display: inline-block;
@@ -123,6 +162,10 @@ body{
     	box-shadow: 5px 5px 0px 0px #0d47a1;
     	color: red;
     }
+    h3{
+    	font-size: 2em;
+    	text-align: center;
+    }
         #resume:hover{
     	background-color: #e53935;
     	box-shadow: 5px 5px 0px 0px #b71c1c;
@@ -130,13 +173,18 @@ body{
     #nameLogo{width: 100%;}
     nav{
     	text-align: center;
-   	 	background-color: #64b5f6;
     }
     a{
     	text-decoration: none;
     }
     #postAndDetails{
 	background-color: #D7CCC8;
+}
+#area{
+	font-size: 2em;
+	line-height: 2;
+	background-color: lightblue;
+	border-radius: 10px;
 }
 #postTitle{
 	background-color:#FF7043;
@@ -155,5 +203,20 @@ body{
 	padding: 20px;
 	margin: 20px;
 	border-radius: 10px;
+}
+#myPic{
+	display: block;
+margin-left: auto;
+margin-right: auto;
+	width: 175px;
+	height: 300px;
+}
+p{font-size: 24px;
+line-height: 2;}
+h4{font-size: 30px;
+text-align: center;}
+li{
+	font-size: 24px;;
+	line-height: 2;
 }
 }
