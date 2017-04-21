@@ -27,6 +27,7 @@
 		<br>
 		<nav>
 			<ul id="backNav" class='navigate'><a href="/posts">Back to posts</a></ul>
+			
 			<ul id="previousPost" class='navigate'><a href="<%= @post.id - 1 %>">Previous Post</a></ul>
 			<ul id="nextPost" class='navigate'><a href="<%= @post.id + 1 %>">Next Post</a></ul>
 		</nav>
@@ -34,7 +35,43 @@
 		<h1 id="postTitle">//<%= @post.title %></h1>
 		<p id="postTime"><%= @post.created_at.strftime("%b/%d/%Y") %></p> <br>
 		<br><br><br><br><br><br>
+				<% if @post.flagged != "HTML"%>
 		<p id="postContent"><%= @post.content %></p>
+				<% else %>
+				<div id='postContent'>
+				</div>
+				<script>
+				var x = '<%= simple_format(@post.content) %>';
+				var z = "";
+				/*
+				for(var y = 0; y < x.length; y++){
+					if (x[y] == '&'){
+						if (x[y+1] == 'g'){
+							if(x[y+2] == 't'){
+								z += ">";
+								y+=3;
+							}
+						}
+						else if (x[y+1] == 'l'){
+							if (x[y+2] == 't'){
+								z += '<';
+								y += 3;
+							}
+						}
+					else if (x[y+1] == "#"){
+						if (x[y+2] == '3'){
+							if (x[y+3] == '9'){
+								z += "'";
+								y+=4;
+							}
+						}
+					}
+					}
+					else z+= x[y]
+				}*/
+				$("#postContent").html(x)</script>
+				<% end %>
+
 		<br><br>
 		</div>
 				<script>
