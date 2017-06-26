@@ -27,16 +27,9 @@
 	<br>
 	<nav>
 		<ul id="backNav" class='navigate'><a href="/posts">Back to posts</a></ul>
-		<% if Posts.where(:id => @post.id - 1).blank? %>
-		<end>
-		<else>
+
 		<ul id="previousPost" class='navigate'><a href="<%= @post.id - 1 %>">Previous Post</a></ul>
-		<end>
-		<% if Posts.where(:id => @post.id + 1).blank? %>
-		<end>
-		<else>
 		<ul id="nextPost" class='navigate'><a href="<%= @post.id + 1 %>">Next Post</a></ul>
-		<end>
 	</nav>
 	<div id="postAndDetails">
 		<h1 id="postTitle">//<%= @post.title %></h1>
