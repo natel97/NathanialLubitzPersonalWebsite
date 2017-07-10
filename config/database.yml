@@ -9,8 +9,8 @@ default: &default
   encoding: unicode
   database: portfolio
   pool: 5
-  username: Lainahtan
-  password: Angeleyes1
+  username: UserName
+  password: Password
   timeout: 5000
 
 development:
